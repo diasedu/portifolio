@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="pt-br" class="h-100" data-bs-theme="auto">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta name="author" content="Eduardo Praxedes Dias">
+	<meta name="theme-color" content="#712cf9">
+	<title>Portifólio</title>
+	<link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link href="../assets/css/estilo.css" rel="stylesheet">
+	<script src="../assets/dist/js/fontawesome.min.js"></script>
+	<script src="../assets/js/color-modes.js"></script>
+	<script src="../assets/dist/js/jquery.min.js"></script>
+	<style>
+		.bd-placeholder-img {
+			font-size: 1.125rem;
+			text-anchor: middle;
+			-webkit-user-select: none;
+			-moz-user-select: none;
+			user-select: none;
+		}
+
+		@media (min-width: 768px) {
+			.bd-placeholder-img-lg {
+				font-size: 3.5rem;
+			}
+		}
+
+		.b-example-divider {
+			width: 100%;
+			height: 3rem;
+			background-color: rgba(0, 0, 0, .1);
+			border: solid rgba(0, 0, 0, .15);
+			border-width: 1px 0;
+			box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+		}
+
+		.b-example-vr {
+			flex-shrink: 0;
+			width: 1.5rem;
+			height: 100vh;
+		}
+
+		.bi {
+			vertical-align: -.125em;
+			fill: currentColor;
+		}
+
+		.nav-scroller {
+			position: relative;
+			z-index: 2;
+			height: 2.75rem;
+			overflow-y: hidden;
+		}
+
+		.nav-scroller .nav {
+			display: flex;
+			flex-wrap: nowrap;
+			padding-bottom: 1rem;
+			margin-top: -1px;
+			overflow-x: auto;
+			text-align: center;
+			white-space: nowrap;
+			-webkit-overflow-scrolling: touch;
+		}
+
+		.btn-bd-primary {
+			--bd-violet-bg: #712cf9;
+			--bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+
+			--bs-btn-font-weight: 600;
+			--bs-btn-color: var(--bs-white);
+			--bs-btn-bg: var(--bd-violet-bg);
+			--bs-btn-border-color: var(--bd-violet-bg);
+			--bs-btn-hover-color: var(--bs-white);
+			--bs-btn-hover-bg: #6528e0;
+			--bs-btn-hover-border-color: #6528e0;
+			--bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+			--bs-btn-active-color: var(--bs-btn-hover-color);
+			--bs-btn-active-bg: #5a23c8;
+			--bs-btn-active-border-color: #5a23c8;
+		}
+
+		.bd-mode-toggle {
+			z-index: 1500;
+		}
+
+		.bd-mode-toggle .bi {
+			width: 1em;
+			height: 1em;
+		}
+
+		.bd-mode-toggle .dropdown-menu .active .bi {
+			display: block !important;
+		}
+	</style>
+</head>
+
+<body class="d-flex h-100 text-center">
+	<div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle" style="display: none;">
+		<button class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center" id="bd-theme" type="button"
+			aria-expanded="false" data-bs-toggle="dropdown" aria-label="Toggle theme (auto)">
+			<svg class="bi my-1 theme-icon-active" aria-hidden="true">
+				<use href="#circle-half"></use>
+			</svg>
+			<span class="visually-hidden" id="bd-theme-text">Toggle theme</span>
+		</button>
+		<ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="bd-theme-text">
+			<li>
+				<button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light"
+					aria-pressed="false">
+					<svg class="bi me-2 opacity-50" aria-hidden="true">
+						<use href="#sun-fill"></use>
+					</svg>
+					Light
+					<svg class="bi ms-auto d-none" aria-hidden="true">
+						<use href="#check2"></use>
+					</svg>
+				</button>
+			</li>
+			<li>
+				<button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark"
+					aria-pressed="false">
+					<svg class="bi me-2 opacity-50" aria-hidden="true">
+						<use href="#moon-stars-fill"></use>
+					</svg>
+					Dark
+					<svg class="bi ms-auto d-none" aria-hidden="true">
+						<use href="#check2"></use>
+					</svg>
+				</button>
+			</li>
+			<li>
+				<button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="auto"
+					aria-pressed="true">
+					<svg class="bi me-2 opacity-50" aria-hidden="true">
+						<use href="#circle-half"></use>
+					</svg>
+					Auto
+					<svg class="bi ms-auto d-none" aria-hidden="true">
+						<use href="#check2"></use>
+					</svg>
+				</button>
+			</li>
+		</ul>
+	</div>
+	<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+		<header class="mb-auto">
+      <div>
+        <h3 class="float-md-start mb-0">Portifólio</h3>
+        <nav class="nav nav-masthead justify-content-center float-md-end">
+          <a class="nav-link fw-bold py-1 px-0" aria-current="page" href="../pages/index.html">Início</a>
+          <a class="nav-link fw-bold py-1 px-0 active" href="../pages/sobre.html">Sobre</a>
+          <a class="nav-link fw-bold py-1 px-0" href="../pages/contato.html">Contato</a>
+        </nav>
+      </div>
+    </header>
+
+		<div class="d-flex align-center-start" style="display: none;" id="conteudo">
+			<div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+				<button class="nav-link active" id="v-pills-introducao-tab" data-bs-toggle="pill"
+					data-bs-target="#v-pills-introducao" type="button" role="tab" aria-controls="v-pills-introducao"
+					aria-selected="true"><i class="fa-solid fa-person"></i></button>
+				<button class="nav-link" id="v-pills-formacao-tab" data-bs-toggle="pill" data-bs-target="#v-pills-formacao"
+					type="button" role="tab" aria-controls="v-pills-formacao" aria-selected="false"><i
+						class="fa-solid fa-graduation-cap"></i></button>
+				<button class="nav-link" id="v-pills-experiencia-tab" data-bs-toggle="pill"
+					data-bs-target="#v-pills-experiencia" type="button" role="tab" aria-controls="v-pills-experiencia"
+					aria-selected="false"><i class="fa-solid fa-chalkboard-user"></i></button>
+				<button class="nav-link" id="v-pills-tecnologias-tab" data-bs-toggle="pill"
+					data-bs-target="#v-pills-tecnologias" type="button" role="tab" aria-controls="v-pills-tecnologias"
+					aria-selected="false"><i class="fa-solid fa-server"></i></button>
+				<button class="nav-link" id="v-pills-projetos-tab" data-bs-toggle="pill" data-bs-target="#v-pills-projetos"
+					type="button" role="tab" aria-controls="v-pills-projetos" aria-selected="false" disabled><i
+						class="fa-solid fa-list-check"></i></button>
+			</div>
+			<div class="tab-content align-items-center" id="v-pills-tabContent">
+				<div class="tab-pane fade show active" id="v-pills-introducao" role="tabpanel"
+					aria-labelledby="v-pills-introducao-tab" tabindex="0">
+					<ul class="list-group list-group-flush">
+						<li class="list-group-item">Sou um jovem programador com 5 anos de experiência em desenvolvimento web.</li>
+					</ul class="list-group list-group-flush">
+				</div>
+				<div class="tab-pane fade" id="v-pills-formacao" role="tabpanel" aria-labelledby="v-pills-formacao-tab"
+					tabindex="0">
+					<ul class="list-group list-group-flush">
+						<li class="list-group-item">Técnico de Informática pela <a
+								href="https://inscricao.prozeducacao.com.br/home-2024/" target="_blank">ESSA</a> em 2019</li>
+						<li class="list-group-item">Análise e Desenvolvimento de Sistemas pela <a href="https://unisa.br/"
+								target="_blank">Unisa</a> desde 2023</li>
+					</ul class="list-group list-group-flush">
+				</div>
+				<div class="tab-pane fade" id="v-pills-experiencia" role="tabpanel" aria-labelledby="v-pills-experiencia-tab"
+					tabindex="0">
+					<ul class="list-group list-group-flush">
+						<li class="list-group-item">Desenvolvedor web na <a href="https://centrallife.com.br/"
+								target="_blank">Central Life</a> de 2019 a 2023.</li>
+						<li class="list-group-item">Desenvolvedor web na <a href="https://www.marjan.com.br" target="_blank">Marjan
+								Farma</a> desde 2023.</li>
+					</ul class="list-group list-group-flush">
+				</div>
+				<div class="tab-pane fade" id="v-pills-projetos" role="tabpanel" aria-labelledby="v-pills-projetos-tab"
+					tabindex="0">
+					<ul class="list-group list-group-flush">
+
+					</ul class="list-group list-group-flush">
+
+				</div>
+				<div class="tab-pane fade" id="v-pills-tecnologias" role="tabpanel" aria-labelledby="v-pills-tecnologias-tab"
+					tabindex="0">
+					<div class="row">
+						<div class="col">
+							<span class="badge bg-light-subtle text-light-emphasis rounded-pill">
+								<i class="fa-brands fa-php"></i>
+							</span>
+						</div>
+						<div class="col">
+							<span class="badge bg-light-subtle text-light-emphasis rounded-pill">
+								<i class="fa-brands fa-html5"></i>
+							</span>
+						</div>
+						<div class="col">
+							<span class="badge bg-light-subtle text-light-emphasis rounded-pill">
+								<i class="fa-brands fa-js"></i>
+							</span>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col">
+							<span class="badge bg-light-subtle text-light-emphasis rounded-pill">
+								<i class="fa-brands fa-python"></i>
+							</span>
+						</div>
+						<div class="col">
+							<span class="badge bg-light-subtle text-light-emphasis rounded-pill">
+								<i class="fa-solid fa-database"></i>
+							</span>
+						</div>
+						<div class="col">
+							<span class="badge bg-light-subtle text-light-emphasis rounded-pill">
+								<i class="fa-brands fa-bootstrap"></i>
+							</span>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col">
+							<span class="badge bg-light-subtle text-light-emphasis rounded-pill">
+								<i class="fa-brands fa-css3-alt"></i>
+							</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<footer class="mt-auto text-white-50">
+			<p>Desenvolvido por <a href="https://github.com/diasedu" class="text-white">@Eduardo Praxedes Dias</a></p>
+		</footer>
+	</div>
+	<script defer src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+	<script>
+		$("#conteudo").show("slow");
+	</script>
+</body>
+
+</html>
